@@ -1,0 +1,40 @@
+.container1{
+    display: flex;
+    width:50% ;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid grey;
+    border-radius: 4.5px;
+    -webkit-box-shadow:  10px 10px 7px -2px rgba(123,181,143,1);
+    -moz-box-shadow: 10px 10px 7px -2px rgb(38, 180, 168);
+    box-shadow: 10px 10px 7px -2px rgba(123,181,143,1);
+}
+.container1 img{
+    width:55% ;
+    height: 500px; 
+}
+.container1 h2{
+    align-self: center;
+    color:green;
+}
+
+.container2{
+    align-self: center;
+    margin-left: 50px;
+}
+.container2 h2{
+        font-size:xx-large;
+}
+.container2 button{
+    margin-left: 60px;
+    color: green;
+    font-size:1em;
+}
+#landbutton{
+    padding: 10px;
+    border-radius: 5px;
+    border-color: green;
+}
+/* #card{
+    border: 1px solid grey;
+} */
