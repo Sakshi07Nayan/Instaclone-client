@@ -1,5 +1,5 @@
-import Logo from "../assets/logo1.png";
-import Camera from "../assets/cam2.jpg"
+import Logo from "../assets/download.png";
+//import Camera from "../assets/cam2.jpg"
 import { useEffect, useState } from "react";
 
 import axios from "axios"
@@ -21,17 +21,20 @@ const PostView = () => {
     return (
         <>
        
-        <div className="container">
+        <div className="containerback">
                 <header>
                     <div className="nav">
-                        <img src={Logo} alt="insta-logo"></img>
-                        <a href="./form"><img id="camera" src={Camera} alt="camera"></img></a>
+                        <img id="insta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjej450FhKD_mXUI4Xn_1XKl-4da_t-Dq0Gg&usqp=CAU" alt="log"/>
+                        <img src={Logo} alt="insta-logo" id="lable"></img>
+                        <a href="./form"><img id="camera1" src="./images/camera1.gif" alt="camera"></img></a>
                         
 
                     </div>
                 </header>
                 <hr />
-                <div>
+                <br/><br/>
+                <br/>
+                <div id="back">
                     {data.map((user,i)=>{
                          return (
                                 <div className="body">
@@ -46,8 +49,8 @@ const PostView = () => {
                                         </div>
                                         <div className="cont1">
                                         <div className="heart">
-                                            <img  id="heart-image" src="/heart.png" alt="user defined"></img>
-                                            <img  id="share-image" src="/share.png" alt="user defined"></img>
+                                            <img  id="heart-image" src="./images/heart.png" alt="user defined"></img>
+                                            <img  id="share-image" src="./images/share.png" alt="user defined"></img>
                                             {/* <span className="grid" id="date" >{user.date}</span> */}
                                         </div>
                                         <div className="user-meta">

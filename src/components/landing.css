@@ -1,3 +1,12 @@
+#coverImg{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 880px;
+    opacity: 0.6;
+}
 .container1{
     display: flex;
     width:50% ;
@@ -8,10 +17,11 @@
     -webkit-box-shadow:  10px 10px 7px -2px rgba(123,181,143,1);
     -moz-box-shadow: 10px 10px 7px -2px rgb(38, 180, 168);
     box-shadow: 10px 10px 7px -2px rgba(123,181,143,1);
-}
+    background-color: white;
+}   
 .container1 img{
     width:55% ;
-    height: 500px; 
+    height: 650px; 
 }
 .container1 h2{
     align-self: center;
@@ -31,10 +41,15 @@
     font-size:1em;
 }
 #landbutton{
+    width: 50%;
     padding: 10px;
     border-radius: 5px;
     border-color: green;
 }
-/* #card{
-    border: 1px solid grey;
-} */
+#landbutton:hover{
+    color:white;
+    background-color: greenyellow;
+}
+ /* #card{
+    background-color: antiquewhite;
+}  */

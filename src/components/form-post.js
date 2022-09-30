@@ -1,4 +1,4 @@
-import Logo from "../assets/logo1.png";
+import Logo from "../assets/download.png";
 import Camera from "../assets/cam2.jpg"
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -10,7 +10,7 @@ import './form.css'
 const Form_page=() =>{
     const navigate = useNavigate()
     const [data,setdata] = useState({author: "", location:"", image:"", description:""})
-    const [image,setimage]=useState('')
+    // const [image,setimage]=useState('')
     
     const inputhadler = (id)=> {
         setdata({...data,image:id})
@@ -39,13 +39,14 @@ const Form_page=() =>{
          <header>
             <div className="nav">
                 <img src={Logo} alt="insta-logo"></img>
-                <img id="camera" src={Camera} alt="camera"></img>
+                <a href="./postview"><img id="camera" src="./images/camera1.gif" alt="camera"></img></a>
 
             </div>
         </header>
         <hr />
-        
-        <form onSubmit={handlesubmit}>
+        <div id="fromback">
+            <br/><br/>
+        <form onSubmit={handlesubmit} className="formcard">
             <div className='form-box'>
             <h2>ADD POST</h2>
             <hr/>
@@ -57,17 +58,17 @@ const Form_page=() =>{
                      id="file"/>
             
            
-            <div className="part-2">
-                <div>
-                <input type="text"   placeholder="Author" onChange={(e)=>{setdata({...data, author: e.target.value})}} />
-                <input type="text"  class="inline"  placeholder="Location" onChange={(e)=>{setdata({...data, location: e.target.value})}}/>
-                </div>
+            <div className="content-part" id="margin">
                 
+                <input type="text"   placeholder="Author" onChange={(e)=>{setdata({...data, author: e.target.value})}} />
             </div>
-            <div className='part-3'>
+            <div className="content-part">
+            <input type="text"  class="inline"  placeholder="Location" onChange={(e)=>{setdata({...data, location: e.target.value})}}/>
+            </div>
+            <div className="content-part">
                 <input id="descrip" type="text"  placeholder="Description" onChange={(e)=> {setdata({...data, description: e.target.value})}}/>
             </div>
-            <div className='part-4'>
+            <div className="content-part" id="b-body">
                 <button type="submit" id="b2"> Post</button>
           
             </div>
@@ -75,6 +76,9 @@ const Form_page=() =>{
             </div>
             
         </form>
+
+        </div>
+        
         </>
     )
 }
