@@ -7,6 +7,7 @@ import "./post_view.css";
 
 
 const PostView = () => {
+    const [count, setcount] = useState(0)
     const [data,setpost]=useState([])
     useEffect(()=>{
         axios.get("https://instaclone-pg-server.herokuapp.com/images").then((imagedata)=>{
@@ -17,6 +18,10 @@ const PostView = () => {
         })
         .catch((err)=>{console.log(err)})
     },[])
+
+    // const handleIncrement =(e)=>{
+
+    // }
     
     return (
         <>
@@ -49,7 +54,7 @@ const PostView = () => {
                                         </div>
                                         <div className="cont1">
                                         <div className="heart">
-                                            <img  id="heart-image" src="./images/heart.png" alt="user defined"></img>
+                                            <button onChange={(e)=>{handleIncrement}}><img  id="heart-image" src="./images/heart.png" alt="user defined"></img></button>
                                             <img  id="share-image" src="./images/share.png" alt="user defined"></img>
                                             {/* <span className="grid" id="date" >{user.date}</span> */}
                                         </div>

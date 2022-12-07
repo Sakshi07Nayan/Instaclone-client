@@ -1,5 +1,5 @@
 import Logo from "../assets/download.png";
-import Camera from "../assets/cam2.jpg"
+//import Camera from "../assets/cam2.jpg"
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
