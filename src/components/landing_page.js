@@ -13,7 +13,7 @@ const Landing_page=()=>{
                 <h2>
                     PHOTO SHARE <br/> APP
                 </h2>
-                <Link to="/postview" ><button id="landbutton">Enter</button></Link>
+                <Link to="/postview" ><button id="landbutton">ENTER</button></Link>
             </div>
             
         </div>

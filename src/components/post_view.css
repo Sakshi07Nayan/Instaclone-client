@@ -13,7 +13,10 @@
  
     
 }
-
+button{
+    border: none;
+    cursor: pointer;
+}
 .containerback{
     background-image: linear-gradient(to right, rgb(205, 82, 243) , rgb(238, 238, 151));
     width: 100%;
@@ -34,6 +37,7 @@ header{
 h3{
     margin-bottom: 0px;
     display:flex;
+    font-size: 1.3vw;
     
 }
 .location{
@@ -42,8 +46,9 @@ h3{
 }
 .dot{
     float: right;
-    margin-top: -70px;
+    margin-top: -40px;
     margin-right: 10px;
+    font-weight: bold;
 }
 .body{
     width:37%;
@@ -53,18 +58,25 @@ h3{
 }
 .post{
     width:100%;
+    height: 400px;
+ 
 }
 #heart-image, #share-image{
 
     /* display:flex; */
     height: 20px;
-    margin: 5px;
+    margin: 10px;
+    
     
 }
 
 .heart{
     display: flex;
     float: left;
+}
+.heart img{
+    margin: 10px;
+    cursor: pointer;
 }
 
 #date{
@@ -84,8 +96,8 @@ h3{
 }
 .user-description{
     font-weight: bold;
-    margin-top: 10px;
-    font-size: large;
+    margin-top: 5px;
+    font-size: 1.2vw;
     margin-bottom: 20px;
     /* padding-bottom: 10px; */
 }
@@ -110,4 +122,11 @@ h3{
 }
 #lable{
     float: left;
+}
+.user-info ,.heart,.user-likes,.user-description{
+    
+    padding-left: 10px;
+}
+.user-meta, .dot{
+    padding-right:5px ;
 }

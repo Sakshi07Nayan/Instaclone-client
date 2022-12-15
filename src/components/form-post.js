@@ -1,9 +1,9 @@
-import Logo from "../assets/download.png";
+//import Logo from "../assets/download.png";
 //import Camera from "../assets/cam2.jpg"
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import Filebase64 from "react-file-base64"
+import Filebase64 from "react-file-base64";
 import axios from "axios";
 import './form.css'
 
@@ -19,7 +19,8 @@ const Form_page=() =>{
     const handlesubmit=(e)=>{
         e.preventDefault()
         axios({
-            url:"https://instaclone-pg-server.herokuapp.com/uploads",
+            // https://instaclone-pg-server.herokuapp.com/uploads
+            url:"http://localhost:3002/uploads",
             method:"POST",
             headers :{
             },
@@ -38,7 +39,7 @@ const Form_page=() =>{
         <>
          <header>
             <div className="nav">
-                <img src={Logo} alt="insta-logo"></img>
+                <img src="./images/download.png" alt="insta-logo"></img>
                 <a href="./postview"><img id="camera" src="./images/camera1.gif" alt="camera"></img></a>
 
             </div>
