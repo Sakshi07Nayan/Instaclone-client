@@ -19,8 +19,8 @@ const Form_page=() =>{
     const handlesubmit=(e)=>{
         e.preventDefault()
         axios({
-            // https://instaclone-pg-server.herokuapp.com/uploads
-            url:"http://localhost:3002/uploads",
+           
+            url:"https://insta-serverpg.onrender.com/uploads",
             method:"POST",
             headers :{
             },
