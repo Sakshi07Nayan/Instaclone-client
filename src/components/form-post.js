@@ -7,7 +7,7 @@ import Filebase64 from "react-file-base64";
 import axios from "axios";
 import './form.css'
 
-const Form_page=() =>{
+const FormPage=() =>{
     const navigate = useNavigate()
     const [data,setdata] = useState({author: "", location:"", image:"", description:""})
     // const [image,setimage]=useState('')
@@ -84,5 +84,5 @@ const Form_page=() =>{
         </>
     )
 }
-export default Form_page;
+export default FormPage;
 
