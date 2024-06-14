@@ -14,7 +14,7 @@ const PostView = () => {
     //const [likdata,setlikData] = useState([])
     useEffect(()=>{
         // https://instaclone-pg-server.herokuapp.com/images
-        axios.get("https://insta-serverpg.onrender.com/images").then((imagedata)=>{
+        axios.get("https://instaclone-server-6bfu.onrender.com/images").then((imagedata)=>{
             let datas = imagedata.data.images.reverse();
             //console.log(data[0])
             setpost(datas)
@@ -24,7 +24,7 @@ const PostView = () => {
     },[])
 
     const handleConfirm =(_id)=>{
-        axios.delete(`https://insta-serverpg.onrender.com/remove/${_id}`).then((res)=>{
+        axios.delete(`https://instaclone-server-6bfu.onrender.com/remove/${_id}`).then((res)=>{
             const newList = data.filter((item) => item._id !== _id);
             setpost(newList);
             console.log(res);

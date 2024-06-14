@@ -20,7 +20,8 @@ const Form_page=() =>{
         e.preventDefault()
         axios({
            
-            url:"https://insta-serverpg.onrender.com/uploads",
+            url:"https://instaclone-server-6bfu.onrender.com/uploads",
+            // url:"http://localhost:3000/uploads",
             method:"POST",
             headers :{
             },
